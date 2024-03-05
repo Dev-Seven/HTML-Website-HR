@@ -33,17 +33,13 @@
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
-    $mail->Username = 'info@nhrss.com'; // YOUR gmail email  
-   //$mail->Password = 'info@5272'; // YOUR gmail password
-   $mail->Password = 'wfnsmptcecfixoid';
+    $mail->Username = '*'; // YOUR gmail email  
+   $mail->Password = '*';
 
   
-		  
-		  
-    //  	$mail->setFrom('info@nhrss.com', '');
-    // $mail->addAddress('info@nhrss.com', '');
-    $mail->setFrom('info@nhrss.com', '');
-    $mail->addAddress('info@nhrss.com', '');
+		
+    $mail->setFrom('*', '');
+    $mail->addAddress('*', '');
 
           $mail->addReplyTo($email, $name);
        //   $mail->addBcc($email);
